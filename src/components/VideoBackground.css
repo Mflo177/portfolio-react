@@ -1,0 +1,8 @@
+.video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;      /* Exactly viewport width */
+  height: 100vh;     /* Exactly viewport height */
+  object-fit: cover; /* Cover screen perfectly */
+  z-index: -1;}

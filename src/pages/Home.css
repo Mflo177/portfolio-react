@@ -1,0 +1,9 @@
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.home-page {
+  height: 100vh;     /* full viewport height for Home only */
+}
