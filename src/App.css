@@ -1,3 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+body {
+  background: transparent !important;
+  overflow-x: hidden;
+}
+
+/* Force transparent scrollbar */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 10px;
+  background: transparent !important;
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+  background: transparent !important;
+  border: none !important;
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -8,46 +48,7 @@
   align-items: center;
   padding: 2rem;
   z-index: 100;
-  background: rgba(0, 0, 0, 0); /* slight dark overlay so text is readable */
-}
-
-/* Prevent gutter so scrollbar overlays content/video */
-html {
-  scrollbar-gutter: none !important;
-}
-/* FORCE Chrome to hide the track completely */
-::-webkit-scrollbar-track-piece {
-  background: transparent !important;
-}
-::-webkit-scrollbar-corner {
-  background: transparent !important;
-}
-body {
-  background: transparent !important;
-}
-
-/* Completely remove scrollbar track */
-::-webkit-scrollbar-track {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-}
-
-/* Removes scrollbar "gutter" background visually */
-::-webkit-scrollbar {
-  width: 10px;
-  background: transparent;
-}
-
-/* The draggable part */
-::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.6);
-  border-radius: 10px;
-}
-
-/* Hover effect */
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(0, 0, 0, 0);
 }
 
 .logo {
@@ -76,6 +77,12 @@ body {
   position: relative;
   z-index: 10;
   padding: 2rem;
-  margin-top: 120px; /* Push content down so header doesn't cover it */
+  margin-top: 120px;
 }
 
+.subtitle {
+  font-size: 1.2rem;
+  font-weight: 100;
+  margin: 0;
+  opacity: 0.8;
+}

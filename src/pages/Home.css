@@ -5,5 +5,68 @@ html, body {
 }
 
 .home-page {
-  height: 100vh;     /* full viewport height for Home only */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section {
+  text-align: center;
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.welcome {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+
+.intro {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.btn {
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: all 0.3s;
+}
+
+.btn-primary {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-primary:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn-secondary:hover {
+  border-color: white;
+  background: rgba(255, 255, 255, 0.1);
 }

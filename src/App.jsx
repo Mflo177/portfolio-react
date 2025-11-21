@@ -10,13 +10,11 @@ function ScrollControl({ children }) {
 
   useEffect(() => {
     if (location.pathname === "/") {
-      // HOME — disable ALL scrollbars completely
-      document.documentElement.style.overflow = "hidden";
+      document.body.style.height = "100vh";
       document.body.style.overflow = "hidden";
     } else {
-      // PROJECTS — allow normal scrollbar
-      document.documentElement.style.overflow = "auto";
-      document.body.style.overflow = "auto";
+      document.body.style.height = "auto";
+      document.body.style.overflow = "visible";
     }
   }, [location]);
 
@@ -29,14 +27,16 @@ function App() {
       <ScrollControl>
         <div className="App">
           <VideoBackground />
-
-          <header className="header">
-            <h1 className="logo">Mario Flores</h1>
-            <nav className="nav">
-              <Link to="/">Home</Link>
-              <Link to="/projects">Projects</Link>
-            </nav>
-          </header>
+    <header className="header">
+    <div className="logo-section">
+    <h1 className="logo">Mario Flores</h1>
+    <h4 className="subtitle">Software Engineer</h4>
+  </div>
+  <nav className="nav">
+    <Link to="/">Home</Link>
+    <Link to="/projects">Projects</Link>
+  </nav>
+</header>
 
           <main className="content">
             <Routes>
