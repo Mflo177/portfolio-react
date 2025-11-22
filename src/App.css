@@ -57,6 +57,12 @@ body::-webkit-scrollbar-thumb:hover {
   font-weight: bold;
 }
 
+.logo-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
 .nav {
   display: flex;
   gap: 2rem;

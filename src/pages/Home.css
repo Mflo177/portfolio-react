@@ -9,6 +9,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: -6rem;
 }
 
 .hero-section {
@@ -19,8 +20,8 @@ html, body {
 
 .welcome {
   font-size: 2rem;
-  margin-bottom: 1rem;
-  font-weight: 400;
+  margin-bottom: 2rem;
+  font-weight: 350;
 }
 
 .title {
