@@ -21,12 +21,13 @@
 }
 
 .project-card {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
   overflow: hidden;
   backdrop-filter: blur(10px);
   transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .project-card:hover {
@@ -40,9 +41,13 @@
 }
 
 .project-thumb {
-  width: 100%;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
+  margin: 2rem auto 1rem;
+  display: block;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
 .card-text {

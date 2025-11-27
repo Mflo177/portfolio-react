@@ -4,6 +4,7 @@ import VideoBackground from './components/VideoBackground'
 import Home from './pages/Home'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
+import ProjectDetail from './pages/ProjectDetail'
 import './App.css'
 
 /**
@@ -53,11 +54,12 @@ function App() {
 </header>
 
           <main className="content">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/contact" element={<Contact />} />
-            </Routes>
+ <Routes>
+  <Route path="/" element={<Home />} />
+  <Route path="/projects" element={<Projects />} />
+  <Route path="/projects/:id" element={<ProjectDetail />} />
+  <Route path="/contact" element={<Contact />} />
+</Routes>
           </main>
         </div>
       </ScrollControl>

@@ -1,9 +1,9 @@
 const projects = [
   {
     id: 1,
-    title: "VIN Scanner App",
-    description: "Android app using Google ML Kit for real-time VIN scanning.",
-    image: "/images/vin-scanner-thumb.png", // thumbnail
+    title: "VIN Scanner",
+    description: "A mobile app that creates a VIN-list using Google's ML Kit OCR for VIN recognition.",
+    image: "/images/vin-scanner-thumb.png", 
     github: "https://github.com/Mflo177/vinscanner-ai",
     demo: '#',
   },
@@ -50,6 +50,52 @@ const projects = [
     demo: '#',
     detailPage: '/ppe-detection'
     },
+    { 
+    id: 7,
+    title: 'PPE Detection AI', 
+    description: 'In-progress AI app that detects PPE gear using computer vision.',
+    image: '/images/ppe-detection.thump.png',
+    github: '#',
+    demo: '#',
+    detailPage: '/ppe-detection'
+    }, 
+    { 
+    id: 8,
+    title: 'PPE Detection AI', 
+    description: 'In-progress AI app that detects PPE gear using computer vision.',
+    image: '/images/ppe-detection.thump.png',
+    github: '#',
+    demo: '#',
+    detailPage: '/ppe-detection'
+    }, 
+    { 
+    id: 9,
+    title: 'PPE Detection AI', 
+    description: 'In-progress AI app that detects PPE gear using computer vision.',
+    image: '/images/ppe-detection.thump.png',
+    github: '#',
+    demo: '#',
+    detailPage: '/ppe-detection'
+    },
+    { 
+    id: 10,
+    title: 'PPE Detection AI', 
+    description: 'In-progress AI app that detects PPE gear using computer vision.',
+    image: '/images/ppe-detection.thump.png',
+    github: '#',
+    demo: '#',
+    detailPage: '/ppe-detection'
+    }, 
+    { 
+    id: 11,
+    title: 'PPE Detection AI', 
+    description: 'In-progress AI app that detects PPE gear using computer vision.',
+    image: '/images/ppe-detection.thump.png',
+    github: '#',
+    demo: '#',
+    detailPage: '/ppe-detection'
+    }, 
+ 
 ];
 
 export default projects;

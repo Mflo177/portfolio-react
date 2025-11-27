@@ -1,50 +1,62 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import './Projects.css'
 import projects from '../data/projects'   
 
 
 const Projects = () => {
+  const navigate = useNavigate()
+
   return (
     <div className="projects">
       <h2>My Projects</h2>
 
       <div className="project-list">
         {projects.map(project => (
-          <div key={project.id} className="project-card-link">
-            <div className="project-card">
-              <div className="card-content">
+          <div 
+            key={project.id} 
+            className="project-card"
+            onClick={() => navigate(`/projects/${project.id}`)}
+          >
+            <div className="card-content">
+              <img 
+                src={project.image} 
+                alt={project.title} 
+                className="project-thumb" 
+              />
 
-                <img 
-                  src={project.image} 
-                  alt={project.title} 
-                  className="project-thumb" 
-                />
+              <div className="card-text">
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
 
-                <div className="card-text">
-                  <h3>{project.title}</h3>
-                  <p>{project.description}</p>
-
-                  <p>
-                    {project.github && (
-                      <a href={project.github} target="_blank" rel="noopener noreferrer">
-                        GitHub
-                      </a>
-                    )}
-                    {" | "}
-                    {project.demo && (
-                      <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                        Live Demo
-                      </a>
-                    )}
-                  </p>
-                </div>
-
+                <p>
+                  {project.github && (
+                    <a 
+                      href={project.github} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      GitHub
+                    </a>
+                  )}
+                  {" | "}
+                  {project.demo && (
+                    <a 
+                      href={project.demo} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Live Demo
+                    </a>
+                  )}
+                </p>
               </div>
             </div>
           </div>
         ))}
       </div>
-
     </div>
   )
 }
