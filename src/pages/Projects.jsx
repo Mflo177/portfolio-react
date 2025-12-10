@@ -1,11 +1,16 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import './Projects.css'
-import projects from '../data/projects'   
+import projects from '../data/projects'
 
 
 const Projects = () => {
   const navigate = useNavigate()
+
+    const handleCardClick = (projectId) => {
+    const scrollPosition = window.scrollY;
+    navigate(`/projects/${projectId}`, { state: { fromScrollPosition: scrollPosition } });
+  }
 
   return (
     <div className="projects">
@@ -13,16 +18,16 @@ const Projects = () => {
 
       <div className="project-list">
         {projects.map(project => (
-          <div 
-            key={project.id} 
+          <div
+            key={project.id}
             className="project-card"
-            onClick={() => navigate(`/projects/${project.id}`)}
+            onClick={() => handleCardClick(project.id)}
           >
             <div className="card-content">
-              <img 
-                src={project.image} 
-                alt={project.title} 
-                className="project-thumb" 
+              <img
+                src={project.image}
+                alt={project.title}
+                className="project-thumb"
               />
 
               <div className="card-text">
@@ -31,9 +36,9 @@ const Projects = () => {
 
                 <p>
                   {project.github && (
-                    <a 
-                      href={project.github} 
-                      target="_blank" 
+                    <a
+                      href={project.github}
+                      target="_blank"
                       rel="noopener noreferrer"
                       onClick={(e) => e.stopPropagation()}
                     >
@@ -42,9 +47,9 @@ const Projects = () => {
                   )}
                   {" | "}
                   {project.demo && (
-                    <a 
-                      href={project.demo} 
-                      target="_blank" 
+                    <a
+                      href={project.demo}
+                      target="_blank"
                       rel="noopener noreferrer"
                       onClick={(e) => e.stopPropagation()}
                     >

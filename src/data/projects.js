@@ -3,9 +3,15 @@ const projects = [
     id: 1,
     title: "VIN Scanner",
     description: "A mobile app that creates a VIN-list using Google's ML Kit OCR for VIN recognition.",
-    image: "/images/vin-scanner-thumb.png", 
-    github: "https://github.com/Mflo177/vinscanner-ai",
+    image: "/images/vin-scanner-thumb.png",
+    images: ["/images/1scan_vin_barcode.jpg", "/images/main_menu.jpg", 
+      "/images/lists_menu.jpg",
+    ],
+    github: "https://github.com/Mflo177/vinscanner-ai", 
     demo: '#',
+    technologies: ["Android | ", "ML Kit | ", "Kotlin"],
+    longDescription: "Detailed explanation here...", // Extended content
+    videoDemo: "https://www.youtube.com/embed/q8jsdynda60?si=lteJ9Z1ugJJnk4ZI" // Optional video
   },
   {
     id: 2,
