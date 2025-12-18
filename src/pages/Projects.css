@@ -48,6 +48,11 @@
   display: block;
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  opacity: 0.9
+}
+
+.project-card:hover .project-thumb {
+  opacity: 1;
 }
 
 .card-text {
