@@ -1,7 +1,82 @@
 .contact-page {
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 2rem;
   height: 100vh;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -9rem;
+}
+
+.contact-content {
+  text-align: center;
+  width: 100%;
+}
+
+.contact-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+.contact-intro {
+  font-size: 1.3rem;
+  margin-bottom: 4rem;
+  opacity: 1;
+  font-weight: 300;
+}
+
+.contact-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 2rem;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.contact-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.contact-card:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-5px);
+}
+
+.contact-card:hover h3,
+.contact-card:hover p {
+  color: white;
+}
+
+
+
+.resume-button {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: all 0.3s;
+}
+
+.resume-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 1);
+  transform: translateY(-2px);
 }

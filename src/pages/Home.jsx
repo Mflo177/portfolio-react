@@ -7,9 +7,9 @@ const Home = () => {
       <div className="hero-section">
         <h3 className="welcome">Welcome to my portfolio!</h3>
         <p className="intro">
-          Recent software engineering graduate specializing in AI-powered applications 
-          and intelligent systems. I build solutions that combine machine learning with
-          practical problem-solving.
+          Software Engineer building AI-powered applications that solve real-world problems. 
+          I create tools that make work more efficient. Currently seeking opportunities where 
+          I can contribute to innovative projects and continue growing my skills.
         </p>
       </div>
     </div>

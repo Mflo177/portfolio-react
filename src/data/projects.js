@@ -2,15 +2,14 @@ const projects = [
   {
     id: 1,
     title: "VIN Scanner",
-    description: "A mobile app that creates a VIN-list using Google's ML Kit OCR for VIN recognition.",
+    description: 'An intelligent application that streamlines automotive inventory management through real-time VIN detection and automated data collection.',
     image: "/images/vin-scanner-thumb.png",
     github: "https://github.com/Mflo177/vinscanner-ai", 
-    demo: '#',
     technologies: ["ML Kit", "Computer Vision", "Android Studio", "Java"],
     longDescription: `VinScanner AI uses computer vision and machine learning to detect VIN numbers 
-    from windshields and barcodes in real-time using the device's camera. Detected VINs are organized 
-    into an editable list and exported as CSV files for email sharing. Designed for automotive inventory
-    management, the app streamlines data collection and reduces errors.`,
+    from windshields and barcodes in real-time using the device's camera for automotive inventory
+    management. Detected VINs are organized into an editable list and exported as CSV files for email 
+    sharing. The app streamlines data collection and reduces errors.`,
     videoDemo: "https://www.youtube.com/embed/q8jsdynda60?si=lteJ9Z1ugJJnk4ZI",
     featuredImages: [
       "/images/1scan_vin_barcode.jpg", 
@@ -19,18 +18,18 @@ const projects = [
       "/images/lists_menu.jpg",
     ],
      allImages: [
-      { src: "/images/1scan_vin_barcode.jpg", caption: "Scan VIN and barcode screen" },
-      { src: "/images/main_menu.jpg", caption: "Main menu" },
-      { src: "/images/insert_notes.jpg", caption: "Insert notes to VINs" },
-      { src: "/images/lists_menu.jpg", caption: "VIN lists management" },
-      { src: "/images/vin_list.jpg", caption: "Description for image 5" },
-      { src: "/images/scan_vin_barcode.jpg", caption: "Description for image 6" },
-      { src: "/images/insert_vin_data.jpg", caption: "Description for image 7" },
-      { src: "/images/select_row.jpg", caption: "Description for image 8" },
-      { src: "/images/succesfully_added_vin.jpg", caption: "Description for image 9" },
-      { src: "/images/drop_menu.jpg", caption: "Description for image 10" },
-      { src: "/images/swipe_delete.jpg", caption: "Description for image 11" },
-      { src: "/images/delete_confirmation.jpg", caption: "Description for image 12" }
+      { src: "/images/1scan_vin_barcode.jpg", caption: "Barcode scanning" },
+      { src: "/images/main_menu.jpg", caption: "Main menu navigation" },
+      { src: "/images/insert_notes.jpg", caption: "Add custom notes to scanned VINs" },
+      { src: "/images/lists_menu.jpg", caption: "Manage multiple VIN lists" },
+      { src: "/images/vin_list.jpg", caption: "Organized VIN list with details" },
+      { src: "/images/scan_vin_barcode.jpg", caption: "Camera view during scanning" },
+      { src: "/images/insert_vin_data.jpg", caption: "Manual VIN entry with location data" },
+      { src: "/images/select_row.jpg", caption: "Select VIN entry for editing" },
+      { src: "/images/succesfully_added_vin.jpg", caption: "VIN successfully added confirmation" },
+      { src: "/images/drop_menu.jpg", caption: "Export and sharing options" },
+      { src: "/images/swipe_delete.jpg", caption: "Swipe to delete VIN entry" },
+      { src: "/images/delete_confirmation.jpg", caption: "Delete confirmation dialog" }
     ]
   },
   {
