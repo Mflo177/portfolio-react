@@ -40,7 +40,6 @@ const ProjectDetail = () => {
         <img src={project.image} alt={project.title} className="detail-image" />
         <h1>{project.title}</h1>
         
-      
         {project.technologies && (
           <div className="tech-stack">
             {project.technologies.map((tech, index) => (
@@ -92,26 +91,13 @@ const ProjectDetail = () => {
                 ›
               </button>
             </div>
-            
-            {/* Thumbnail navigation */}
-            <div className="carousel-thumbnails">
-              {project.allImages.map((img, index) => (
-                <img
-                  key={index}
-                  src={img.src}
-                  alt={`Thumbnail ${index + 1}`}
-                  className={`carousel-thumb ${index === currentImageIndex ? 'active' : ''}`}
-                  onClick={() => setCurrentImageIndex(index)}
-                />
-              ))}
-            </div>
           </div>
         )}
         
         <div className="detail-links">
           {project.github && project.github !== '#' && (
             <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn">
-              View GitHub
+              View Source Code
             </a>
           )}
           {project.demo && project.demo !== '#' && (

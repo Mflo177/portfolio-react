@@ -42,10 +42,10 @@ const Projects = () => {
                       rel="noopener noreferrer"
                       onClick={(e) => e.stopPropagation()}
                     >
-                      GitHub
+                      Source Code 
                     </a>
                   )}
-                  {" | "}
+                  {project.github && project.demo && " | "}
                   {project.demo && (
                     <a
                       href={project.demo}
