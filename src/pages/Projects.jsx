@@ -34,29 +34,7 @@ const Projects = () => {
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
 
-                <p>
-                  {project.github && (
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      Source Code 
-                    </a>
-                  )}
-                  {project.github && project.demo && " | "}
-                  {project.demo && (
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      Live Demo
-                    </a>
-                  )}
-                </p>
+               
               </div>
             </div>
           </div>
