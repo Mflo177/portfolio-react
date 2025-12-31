@@ -25,6 +25,29 @@
   justify-content: center;
 }
 
+/* Add responsive back button positioning */
+@media (max-width: 1200px) {
+  .back-button {
+    left: 2rem;
+    transform: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .back-button {
+    font-size: 3rem;
+    top: 120px;
+    left: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .back-button {
+    font-size: 2.5rem;
+    top: 90px;
+  }
+}
+
 .back-button:focus,
 .back-button:active {
   outline: none;
@@ -32,7 +55,6 @@
 
 .back-button:hover {
   color: rgba(255, 255, 255, 1);
-  transform: translateX(-565px);
 }
 
 .detail-content {
