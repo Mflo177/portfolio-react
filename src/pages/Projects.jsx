@@ -32,6 +32,14 @@ const Projects = () => {
 
               <div className="card-text">
                 <h3>{project.title}</h3>
+
+                {/* ← ADD STATUS BADGE HERE */}
+                {project.status && (
+                  <div className="status-badge">
+                    {project.status}
+                  </div>
+                )}
+
                 <p>{project.description}</p>
 
                

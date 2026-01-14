@@ -1,3 +1,31 @@
+/* Status Badge for In-Development Projects */
+.status-badge {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  margin: 0 0 0.8rem 0;
+  background: linear-gradient(135deg, #8B5CF6, #3B82F6);
+  color: white;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(139, 92, 246, 0.3);
+}
+
+.project-card:hover .project-thumb {
+  opacity: 1;
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(139, 92, 246, 0.6);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .status-badge {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.6rem;
+  }
+}
 .projects {
   max-width: 1200px;
   margin: 0 auto;
@@ -36,7 +64,8 @@
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 20px 60px rgba(139, 92, 246, 0.3);
+  border-color: rgba(139, 92, 246, 0.4);
 }
 
 .card-content {
@@ -53,11 +82,10 @@
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
   opacity: 0.9;
+  transition: all 0.3s ease;
 }
 
-.project-card:hover .project-thumb {
-  opacity: 1;
-}
+
 
 .card-text {
   padding: 1.5rem;
