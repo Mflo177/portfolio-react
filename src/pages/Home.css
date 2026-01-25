@@ -72,7 +72,7 @@ html, body {
   background: rgba(255, 255, 255, 0.1);
 }
 
-@media (max-width: 966px) {
+@media (max-width: 900px) {
   .home-page {
     min-height: auto;
     height: auto;

@@ -119,11 +119,30 @@ body::-webkit-scrollbar-thumb:hover {
   transform: rotate(-45deg) translate(7px, -7px);
 }
 
-@media (max-width: 966px) {
-  .hamburger {
-    display: flex;
+@media (max-width: 900px) {
+  .header {
+    padding: 1rem;
+    flex-direction: row;
+    align-items: center;
   }
 
+ .logo {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+  }
+
+  .content {
+    padding: 1rem;
+    margin-top: 100px;
+  }
+
+  .hamburger {
+    display: flex;
+    align-self: center;
+  }
   .nav {
     position: fixed;
     top: 0;

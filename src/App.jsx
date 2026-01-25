@@ -40,18 +40,21 @@ function ScrollControl({ children }) {
       if (location.pathname === "/" && !isMediumOrSmaller) {
         document.body.style.height = "100vh";
         document.body.style.overflow = "hidden";
+        document.documentElement.style.overflow = "hidden";
         if (header) {
           header.classList.remove('scrolled');
         }
       } else if (location.pathname === "/contact" && !isMobile) {
         document.body.style.height = "100vh";
         document.body.style.overflow = "hidden";
+        document.documentElement.style.overflow = "hidden";
         if (header) {
           header.classList.remove('scrolled');
         }
       } else {
         document.body.style.height = "auto";
         document.body.style.overflow = "auto";
+        document.documentElement.style.overflow = "auto";
         window.addEventListener('scroll', handleScroll);
         handleScroll();
       }
