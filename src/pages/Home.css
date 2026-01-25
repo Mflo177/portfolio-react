@@ -33,7 +33,7 @@ html, body {
 .intro {
   font-size: 1.3rem;
   line-height: 1.8;
-  margin-bottom: 7rem;
+  margin-bottom: 10rem;
   opacity: 0.9;
 }
 
@@ -72,7 +72,7 @@ html, body {
   background: rgba(255, 255, 255, 0.1);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 966px) {
   .home-page {
     min-height: auto;
     height: auto;
@@ -88,6 +88,7 @@ html, body {
   .welcome {
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
+    font-weight: 350;
   }
 
   .intro {
@@ -96,25 +97,3 @@ html, body {
   }
 }
 
-@media (max-width: 600px) {
-  .home-page {
-    padding-top: 1px;
-  }
-
-  .welcome {
-    font-size: 2rem;
-  }
-
-  .intro {
-    font-size: 1.2rem;
-  }
-
-  .cta-buttons {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .btn {
-    width: 100%;
-  }
-}

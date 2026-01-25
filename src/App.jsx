@@ -51,7 +51,7 @@ function ScrollControl({ children }) {
         }
       } else {
         document.body.style.height = "auto";
-        document.body.style.overflow = "visible";
+        document.body.style.overflow = "auto";
         window.addEventListener('scroll', handleScroll);
         handleScroll();
       }
@@ -81,6 +81,11 @@ function ScrollControl({ children }) {
 }
 
 function App() {
+  const [menuOpen, setMenuOpen] = React.useState(false);
+
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+  const closeMenu = () => setMenuOpen(false);
+
   return (
     <Router>
       <ScrollControl>
@@ -91,10 +96,17 @@ function App() {
               <h1 className="logo">Mario Flores</h1>
               <h4 className="subtitle">Software Engineer</h4>
             </div>
-            <nav className="nav">
-              <Link to="/">Home</Link>
-              <Link to="/projects">Projects</Link>
-              <Link to="/contact">Contact</Link>
+            
+            <div className={`hamburger ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <nav className={`nav ${menuOpen ? 'active' : ''}`}>
+              <Link to="/" onClick={closeMenu}>Home</Link>
+              <Link to="/projects" onClick={closeMenu}>Projects</Link>
+              <Link to="/contact" onClick={closeMenu}>Contact</Link>
             </nav>
           </header>
 
