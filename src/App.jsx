@@ -34,7 +34,7 @@ function ScrollControl({ children }) {
 
     const updateScrollBehavior = () => {
       const header = document.querySelector('.header');
-      const isMobile = window.innerWidth <= 1024;
+      const isMobile = window.innerWidth <= 900;
       const isMediumOrSmaller = window.innerWidth <= 900;
 
       if (location.pathname === "/" && !isMediumOrSmaller) {
