@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: inherit;
 }
 
 html {
@@ -12,6 +13,8 @@ html {
 body {
   background: transparent !important;
   overflow-x: hidden;
+  color: rgba(255, 255, 255, 0.911);
+  -webkit-font-smoothing: antialiased; 
 }
 
 /* Force transparent scrollbar */
